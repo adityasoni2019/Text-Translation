@@ -1,0 +1,94 @@
+<!-- Watch video here - https://www.youtube.com/watch?v=LiLlsGUW4AQ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;773;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <!-- <label for="dog-names">Choose a dog name:</label>
+        <select name="dog-names" id="dog-names"></select>
+        <option value="rigatoni">Rigatoni</option>
+        <option value="dave">Dave</option>
+        <option value="pumpernickel">Pumpernickel</option>
+        <option value="reeses">Reeses</option> -->
+
+        <div class="wrapper">
+            
+
+            <div class="text-fields">
+
+                <div class="input-text">
+                    <!-- Hello/ -->
+                    <textarea id = "paragraph_text_input" name="paragraph_text" cols="50" rows="10" textarea placeholder="Enter Text"></textarea>
+                </div>
+                
+                
+                <div class="output-text">
+                    <!-- <p>Translation</p> -->
+                    <textarea id = "paragraph_text_output" name="paragraph_text" cols="50" rows="10" textarea placeholder="Enter Text" readonly disabled></textarea>
+                </div>
+
+            </div>
+
+
+            <div class="controls">
+
+                <div class="input">
+                    <button class="sound" id = "input_text_sound_button"><i class="fa fa-volume-up" ></i></button>
+                    <button class="copy" id = "input_copy_button"><i class="fa fa-copy"></i></button>
+                    
+                    <!-- <button style="font-size:24px">Button <i class="fa fa-volume-up"></i></button> -->
+                    <div class="language">
+                        
+                        <select id = "input_select"></select>
+                    </div>
+                </div>
+
+                
+                <div class="switch">
+                    <button class="ss"><img src="https://cdn-icons-png.flaticon.com/512/318/318147.png" alt="switch-img" width="500" height="600"></button>
+                </div>
+                
+                
+                <div class="output">
+                    <div class="language">
+                        
+                        <!-- <button class="drop-down"><i class="fa fa-caret-down"></i></button> -->
+                        <select id = "output_select"></select>
+                        
+                    </div>
+                    
+                    <button class="sound" id = "output_text_sound_button"><i class="fa fa-volume-up" ></i></button>
+                    <button class="copy" id = "output_copy_button"><i class="fa fa-copy"></i></button>
+                    <!-- <select name="trends"></select> -->
+                    
+                </div>
+
+            </div>
+            
+        </div>
+        
+        
+        <div class="translate-text">
+            <button id ="translate" style="font-size:20px">Translate Text</button>
+        </div>
+        
+        
+    </div>
+    <script src="countries.js">countries</script>
+    <script src = "script.js">script</script>
+</body>
+</html>
+
